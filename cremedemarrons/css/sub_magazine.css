@@ -1,0 +1,52 @@
+@charset "utf-8";
+section {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 7rem;
+}
+.sub_maga h2 {
+    font-family: 'Neuton', serif;
+    letter-spacing: 0.1rem;
+    padding: 1rem 0 2rem;
+}
+.sub_maga li {
+    font-size: 0.8rem;
+}
+.sub_maga img {
+    width: 100%;
+}
+.sub_maga h4 {
+    margin-top: 1rem;
+}
+.ul2 li:nth-child(3) {
+    margin-bottom: 3rem;
+}
+.ul2 li img {
+    margin-bottom: 1rem;
+}
+.ul3 {
+    display: flex;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .sub_maga h2 {
+        font-size: 1.9rem;
+    }
+    .sub_maga li {
+        font-size: 0.85rem;
+    }
+}
+
+/* pc */
+@media screen and (min-width: 1025px) and (max-width: 1930px) {
+    section {
+        width: 80%;
+    }
+    .sub_maga h2 {
+        font-size: 2.2rem;
+    }
+    .sub_maga li {
+        font-size: 0.9rem;
+    }
+}

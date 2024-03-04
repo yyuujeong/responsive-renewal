@@ -1,0 +1,148 @@
+@charset "utf-8";
+#bstory {
+    width: 100%;
+    height: 13rem;
+    background: url(../img/bstory/bstory_1.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    margin-top: 4.3rem;
+}
+.txt {
+    color: #fff;
+    padding: 4.6rem 0;
+}
+.txt h2 {
+    font-weight: normal;
+    font-size: 2rem;
+    font-family: 'Neuton', serif;
+}
+.txt p {
+    font-size: 0.9rem;
+}
+
+/* section */
+.arti_1 {
+    text-align: center;
+    padding: 5rem 1.5rem 0;
+}
+.arti_1 h3 {
+    color: #401404;
+    font-size: 1.4rem;
+}
+.arti_1 p {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+.arti_1 img {
+    width: 100%;
+    margin-top: 4rem;
+}
+.mascot img {
+    width: 50%;
+    margin-top: 5rem;
+}
+.li {
+    width: 100%;
+    position: relative;
+}
+.li_wrap li {
+    float: left;
+    width: 33.33%;
+    padding: 0 0.2rem;
+}
+.li_wrap li img {
+    margin-top: 3rem;
+}
+.arti_2 {
+    padding-top: 0;
+}
+.arti_2 h3 {
+    margin-top: 2rem;
+}
+.m_wrap p:nth-child(2) {
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+.m_wrap2 {
+    width: 100%;
+    margin-top: 4rem;
+}
+.m_wrap2 li {
+    font-size: 0.9rem;
+}
+.m_wrap2 li:nth-child(2) {
+    margin-top: 2rem;
+}
+.m_wrap2 li:nth-child(3) {
+    margin-top: 1rem;
+}
+.m_wrap2 img {
+    margin-top: 0;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .txt h2 {
+        font-size: 2.5rem;
+    }
+    .txt p {
+        font-size: 1rem;
+    }
+    .m_wrap2 li {
+        float: left;
+        width: 50%;
+    }
+    .m_wrap2 li:nth-child(2) {
+        margin-top: 0;
+    }
+    .m_wrap2 li:nth-child(2),.m_wrap2 li:nth-child(3) {
+        text-align: left;
+        padding: 0 1.25rem;
+    }
+}
+
+/* pc */
+@media screen and (min-width: 1025px) and (max-width: 1930px) {
+    #bstory {
+        min-height: 25rem;
+        position: relative;
+        margin-top: 6rem;
+    }
+    .txt {
+        position: absolute;
+        left: 50%;
+        top: 15%;
+        transform: translate(-50%);
+    }
+    .txt h2 {
+        font-size: 2.8rem;
+        
+    }
+    .txt p {
+        font-size: 1.1rem;
+    }
+    .arti_1 {
+        width: 80%;
+        margin: 0 auto;
+        padding: 5rem 5rem 0;
+    }
+    .mascot img {
+        margin-top: 3rem;
+    }
+    .li_wrap li {
+        padding: 0 0.5rem;
+    }
+    .m_wrap2 li {
+        float: left;
+        width: 50%;
+    }
+    .m_wrap2 li:nth-child(2) {
+        margin-top: 0;
+    }
+    .m_wrap2 li:nth-child(2),.m_wrap2 li:nth-child(3) {
+        text-align: left;
+        padding: 0 1.25rem;
+    }
+}

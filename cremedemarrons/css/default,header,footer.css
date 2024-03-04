@@ -1,0 +1,346 @@
+@charset "utf-8";
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+/* font-family: 'Neuton', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Neuton&display=swap');
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+a {
+  text-decoration: none;
+  display: block;
+  color: #000;
+}
+
+/* header */
+header {
+  width: 100%;
+  height: 4.3rem;
+  background: #FFF23E;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+}
+.h_wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+.h_wrap h1 {
+  height: 4.3rem;
+}
+header a {
+  display: inline-block;
+}
+header img {
+  width: 8.5rem;
+  vertical-align: -webkit-baseline-middle;
+}
+
+#icon {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+}
+.icon_wrap > li {
+  float: left;
+}
+.icon_wrap img {
+  width: 1.8rem;
+}
+.cart_btn {
+  display: none;
+}
+.ham_btn {
+  margin-left: 0.8rem;
+}
+#hamburger {
+  background: #fafafa;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  right: -80%;
+  width: 80%;
+  height: 100%;
+  padding: 1.8rem 1.8rem 0;
+}
+.btn {
+  position: absolute;
+  right: 1.3rem;
+}
+.cross {
+  width: 2.8rem;
+  height: 2.8rem;
+  background: none;
+  color: #000;
+  position: absolute;
+  right: 0;
+  top: -1rem;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  z-index: 100000;
+  font-size: 4.5rem;
+}
+.ham_menu { 
+  width: 100%;
+  height: 100%;
+}
+.icon_s {
+  padding-top: 4.3rem;
+  position: relative;
+}
+.icon_s img {
+  width: 1.8rem;
+  position: absolute;
+  right: 0;
+}
+.search_form input {
+  display: block;
+  width: 100%;
+  height: 2.1rem;
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #000;
+}
+.menu_list {
+  margin-top: 1rem;
+}
+.menu_list li {
+  font-size: 1rem;
+  line-height: 4rem;
+  padding-left: 1.25rem;
+}
+.menu_list li a {
+  color: inherit;
+}
+.sub {
+  display: none;
+}
+.sub li:hover {
+  font-weight: bold;
+}
+.modal_back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
+}
+.back_on {
+  opacity: 1;
+  visibility: visible;
+}
+
+section {
+  width: 100%;
+  padding-top: 5rem;
+}
+
+/* .top 부분 */
+.top {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+}
+.top img {
+  width: 3.1rem;
+}
+
+/* footer 부분 */
+footer {
+  width: 95%;
+  margin: 0 auto;
+  padding: 4rem 0 1.25rem;
+}
+footer ul {
+  text-align: center;
+  line-height: 1;
+}
+footer ul li {
+  display: inline-block;
+}
+.footer li a {
+  font-size: 0.5rem;
+}
+.footer2 li {
+  display: inline-block;
+  font-size: 0.45rem;
+}
+.footer2 li:after {
+  content: "|";
+  padding-left: 0.3rem;
+}
+.footer2 li:last-child:after {
+  content: "";
+}
+
+/* 모바일에선 X */
+.form {
+  display: none;
+}
+.m_list_pc {
+  display: none;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .footer2 {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+/* pc */
+@media screen and (min-width: 1025px) and (max-width: 1930px) {
+  header {
+    height: 6rem;
+  }
+  .h_wrap {
+    width: 80%;
+    position: relative;
+  }
+  .h_wrap h1 {
+    height: 6rem;
+  }
+  .h_wrap > h1 > img {
+    margin-top: 0.3rem;
+  }
+  header img {
+    width: 35%;
+    padding: 1rem 0;
+  }
+
+  /* pc화면 - 검색부분  */
+  .form {
+    display: block;
+    position: absolute;
+    right: 5.7rem;
+    top: -1.5rem;
+  }
+  .form_search_inputt {
+    width: 0;
+    height: 1.3em;
+    border: none;
+    outline: none;
+    transition: width 0.5s;
+    background: none;
+  }
+  /* 토글 클래스 */
+  .search_input_open {
+    width: 8rem !important;
+    height: 1.5em;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid #000;
+    margin-top: 0.5rem;
+  }
+  .form_search_submit {
+    display: inline-block;
+    width: 1.5rem;
+    height: 5.7rem;
+    line-height: 5.7rem;
+  }
+  .form_search_submit img {
+    width: 1.4rem;
+  }
+
+  /* 마이페이지, 햄버거버튼 아이콘 */
+  #icon {
+    top: 0;
+  }
+  .icon_wrap li {
+    padding-left: 0.75rem;
+  }
+  .icon_wrap a {
+    display: block;
+  }
+  .icon_wrap img {
+    width: 1.4rem;
+    padding-bottom: 0;
+  }
+  .cart_btn {
+    display: block;
+  }
+  .ham_btn {
+    display: none;
+  }
+  .btn {
+    display: none;
+  }
+
+  .menu_list {
+    display: none;
+  }
+  .m_list_pc {
+    display: block;
+    position: fixed;
+    right: 7rem;
+    top: 3.8rem;
+    width: 60%;
+  }
+  .m_list_pc li {
+    float: left;
+    width: 25%;
+    height: 2.3rem;
+    text-align: center;
+    padding-left: 0;
+  }
+  .m_list_pc > li > a {
+    font-family: "Neuton", serif;
+    height: 2.3rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+    display: block;
+  }
+  .m_list_pc > li:hover {
+    border-bottom: 3px solid #401404;
+  }
+  .m_list_pc .sub {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    position: relative;
+  }
+  .m_list_pc .sub li {
+    float: none;
+    width: 100%;
+    height: 3.4rem;
+    line-height: 3.4rem;
+  }
+  .m_list_pc .sub li a {
+    display: block;
+    padding: 0;
+    font-size: 0.9rem;
+    color: #401404;
+  }
+  .sub li:hover {
+    font-weight: normal;
+    background: #401404;
+  }
+  .sub li:hover a {
+    color: #fff;
+  }
+
+  .modal_back {
+    display: none;
+  }
+
+  footer {
+    width: 75%;
+    padding-top: 7rem;
+  }
+  .footer li a,
+  .footer2 li  {
+    font-size: 0.7rem;
+  }
+}
