@@ -1,4 +1,4 @@
-# 반응형 리뉴얼 - 크림 드 마롱
+# 크림 드 마롱
 
 ### <https://yyuujeong.github.io/responsive-renewal/cremedemarrons/>
 
