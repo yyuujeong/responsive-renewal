@@ -1,4 +1,4 @@
-# 크림 드 마롱
+# 크렘 드 마롱
 
 ### <https://yyuujeong.github.io/responsive-renewal/cremedemarrons/>
 
