@@ -30,18 +30,9 @@ $(function() {
    });
 
    //모달
-   function modalOn() {
-      $(".modal_back").addClass("back_on");
-   }
-   function modalOff() {
-      $(".modal_back").removeClass("back_on");
-   }
-   $(".ham_btn").click(function() {
-      modalOn();
-   });
-   $(".cross").click(function() {
-      modalOff();
-   });
+   $(".ham_btn, .cross").click(function() {
+      $(".modal_back").toggleClass("back_on");
+   })
 
    //pc버전 슬라이드검색
    $("#search_trigger").click(function() {

@@ -1,20 +1,8 @@
 $(function() {
    //상품 선택시 상품이름,수량,가격 나타나게
    $(".choose select").on("change", function() {
-      const ab = $(this).val();
-      const strName = ab;
-      slideTarget(strName.substr(4,1));
-
-      function slideTarget(n) {
-         $(".select_opt").hide();
-         if(n == 1) {
-            $(".select_opt").show();
-         } else if(n == 0) {
-            $(".select_opt").hide();
-         } else {
-            $(".select_opt").eq(n).css("display", "block");
-         }
-      }
+      const n = parseInt($(this).val().charAt(4));
+      $(".select_opt").hide().eq(n === 1 ? 0 : n).css('display', 'block');
    });
 
    //총 합계 계산
@@ -44,13 +32,8 @@ $(function() {
    });
 
    //하단Q&A 열고 닫기
-   $("dd").css("display", "none");
-	$("dt").click(function() {
-		if($(this).next().css("display")=="none") {
-			$(this).next().show();
-		} else {
-         $("dd").stop().hide();
-         $("dd").hide();
-      }
-	});
+   $("dd").hide();
+   $("dt").click(function() {
+      $(this).next("dd").toggle();
+   });
 });
