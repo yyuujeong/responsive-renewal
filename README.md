@@ -3,7 +3,7 @@
 ### <https://yyuujeong.github.io/responsive-renewal/cremedemarrons/>
 
 ## :hammer_and_pick: 기술
-```HTML5``` ```CSS3``` ```JS``` ```jQuery```
+```HTML5``` ```CSS3``` ```jQuery```
 
 ## :card_index_dividers: 프로젝트 소개
 - 개인 반응형 리뉴얼
